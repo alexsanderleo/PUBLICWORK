@@ -25,6 +25,29 @@ hanya dipakai ketika kerjaan private to public
 > 🔒 **REPOSITORI & SISTEM PRIVAT — internal SMK Al-Falah Winong.**
 > **HARAM hukumnya login / mengakses sistem ini dari PC PUBLIK atau komputer umum.** Gunakan **HANYA perangkat pribadi** yang tepercaya. Jaga kerahasiaan akun & dokumen ini.
 
+## 📌 Status Terkini (ringkas — biar alur tak lupa)
+
+*Update: 2026-06-29*
+
+| Modul | Alamat | Status |
+|---|---|---|
+| **App Terpadu** (1 login → semua peran, menu disaring) | `app.` | 🟢 LIVE |
+| **Absensi wajah** (Face-ID via HP) | `absensi.` | 🟢 LIVE |
+| **Nilai** (komponen UH/Tugas/PTS/NS → NA, import Excel) | (di app) / `nilai.` | 🟢 LIVE |
+| **Rapor** (template editable per jenis + cetak wali + peringkat) | (di app) | 🟢 LIVE |
+| **Kurikulum / Jadwal** | `kurikulum.` | 🟢 LIVE |
+| **Drive Bersama** (Google Drive, guru) | (di app) | 🟢 LIVE |
+| **Portal** (hub) · **SSO** (Keycloak) | `portal.` · `accounts.` | 🟢 LIVE |
+| Data · VPS-TKJ · Face Engine | `data.` · `vpstkj.` · `face.` | 🟢 LIVE |
+
+**Alur singkat:** buka di HP/PC → **1× login SSO (Keycloak)** → diarahkan sesuai peran → pakai modul (absen / nilai / rapor / jadwal …) → **semua data lewat Core API** → **1 database master**. Keamanan (RBAC + scope) ditegakkan di server.
+
+**Sedang dikerjakan (rapor):** setelan cetak **seragam** (tanggal, keputusan Naik/Tinggal, sikap mapel, Pramuka) kini bisa diisi 1× & reuse di ⚙️ Pengaturan → Template Rapor ✅. Sisanya (data yang beda tiap siswa) menyusul saat diperlukan.
+
+> Detail teknis & progres lengkap ada di repo privat (`docs/STATE.md`, `docs/ROADMAP.md`). Dokumen ini sengaja **ringkas**.
+
+---
+
 ## 📑 Daftar Isi
 
 1. [Tentang Platform](#-tentang-platform)
